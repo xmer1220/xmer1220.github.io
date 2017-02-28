@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+/*中间左边区域*/
+.main{width:1140px;margin:0 auto;height:1880px;}
+.main .mainLeft{float:left;height:1880px;}
+.main .mainLeft .mlh3{font:15px/38px arial;font-weight:bolder;color:#010101;padding:33px 0 0 16px;}
+.main .mainLeft .mlp{font:13px/31px arial;color:#9c9c9c;padding-left:16px;}
+.main .mainLeft .mlp span{color:#ed6857;}
+.main .mainLeft .ding{width:813px;height:417px;border:6px solid #eb5844;margin-left:16px;position:relative;}
+.main .mainLeft .ding img{width:813px;}
+.main .mainLeft .ding .icon{float:right;height:41px;position:absolute;z-index:2;left:723px;bottom:-2px;}
+.main .mainLeft .ding .icon a{display:block;float:left;width:42px;height:41px;background:url(../images/s-icons.png) no-repeat;margin-left:3px;}
+.main .mainLeft .ding .icon .camera{background-position:-242px -124px;}
+.main .mainLeft .ding .icon .hour{background-position:-288px -124px;}
+.main .mainLeft .soft{font:13px/31px arial;color:#9c9c9c;padding-left:16px;}
+.main .mainLeft .soft span{color:#ed6857;}
+.main .mainLeft .pra{font:13px/23px arial;color:#9e9e9e;width:820px;padding-left:16px;}
+.main .mainLeft .midh2{font:19px/58px "微软雅黑";padding-left:16px;}
+.main .mainLeft .form{padding-left:24px;}
+.main .mainLeft .form .input{width:791px;height:38px;background-color:#eee;margin-bottom:16px;padding-left:17px;font:13px/38px arial;color:#454545;}
+.main .mainLeft .form textarea{resize:none;width:808px;height:150px;background-color:#eee;margin-bottom:16px;}
+.main .mainLeft .form .sub{width:145px;height:51px;border-radius:4px;background-color:#ea5340;box-shadow:0 0 10px rgba(0,0,0,.2) inset;font:15px/51px arial;font-weight:bolder;color:#fff;text-align:center;}
+.main .mainLeft .person{width:823px;height:199px;border:1px solid #d4d4d4;margin:0 0 40px 16px;}
+.main .mainLeft .person .image{display:block;float:left;}
+.main .mainLeft .person img{width:158px;margin:17px 0 0 15px;}
+.main .mainLeft .person .tomh3{font:13px/23px arial;font-weight:bolder;padding:13px 0 0 221px;}
+.main .mainLeft .person .textP{font:13px/23px arial;color:#9e9e9e;width:580px;padding:0 23px 0 221px;}
+.main .mainLeft .person span{font:13px/31px arial;color:#9c9c9c;padding-left:48px;}
+.main .mainLeft .person .reply{display:block;width:99px;height:43px;border-radius:4px;background-color:#ea5340;box-shadow:0 0 10px rgba(0,0,0,.2) inset;font:15px/43px arial;font-weight:bolder;color:#fff;margin:-30px 0 0 628px;text-align:center;}
+/*中间右边区域*/
+.main .mainRight{float:left;padding-left:20px;height:850px;}
+.main .mainRight .rh3{font:15px/50px arial;font-weight:bolder;color:#010101;}
+.main .mainRight .r1h3{padding-top:33px;}
+.main .mainRight .form2{position:relative;}
+.main .mainRight .form2 input{width:236px;height:42px;border:1px solid #dbdbdb;padding-left:17px;font:13px/38px arial;color:#9c9da1;}
+.main .mainRight .form2 .search{display:block;background:url(../images/search.png) no-repeat;width:20px;height:20px;position:absolute;z-index:2;right:20px;top:14px;}
+.main .mainRight .textUl li{background:url(../images/b_arrow.png) no-repeat left 7px;padding-left:23px;}
+.main .mainRight .textUl li a{font:13px/23px arial;color:#999;}
+.main .mainRight .imgUl{width:266px;height:235px;}
+.main .mainRight .imgUl li{float:left;width:114px;height:73px;margin:0 12px 8px 4px;}
+.main .mainRight .imgUl li img{width:114px;}

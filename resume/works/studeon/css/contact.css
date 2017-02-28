@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+.main{width:1140px;margin:0 auto;text-align:center;}
+.main h1{font:33px/96px Gadugi;font-weight:normal;padding-top:57px;}
+.main p{font:13px/23px Gadugi;color:#9c9c9c;padding:0 109px;margin-bottom:31px;}
+.main .form .text{width:333px;height:47px;font:15px/47px Gadugi;background-color:#ededed;color:#b8b8b8;border:1px solid #dcdbe0;border-radius:4px;padding:0 17px;}
+.main .form textarea{width:1081px;height:248px;font:15px/47px Gadugi;background-color:#ededed;color:#b8b8b8;border:1px solid #dcdbe0;border-radius:4px;padding:0 17px;margin-top:24px;resize:none;}
+.main .form .submit{width:225px;height:57px;border-radius:4px;background-color:#ed5844;box-shadow:0 0 10px rgba(0,0,0,.2) inset;margin:45px 0 42px 0;font:15px/57px Gadugi;color:#fff;}

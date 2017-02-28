@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+ul{list-style:none;}
+a{text-decoration:none;}
+img,input,textarea{border:none;}
+.clear{clear:both;}
+::-moz-selection{background:#41EC49;}
+::selection{background:#41EC49;}
+@font-face{
+	font-family:ziti;
+	src:url(../fonts/Munro.eot),url(../fonts/Munro.otf),url(../fonts/Munro.svg),url(../fonts/Munro.ttf),url(../fonts/Munro.woff);
+}
+@keyframes sunny{
+	0%{text-shadow:0 0 0 #fff;}
+	25%{text-shadow:0 0 10px rgba(255,255,255,1);}
+	50%{text-shadow:0 0 10px rgba(255,255,255,1),0 0 20px rgba(255,255,255,1);}
+	75%{text-shadow:0 0 10px rgba(255,255,255,1);}
+	100%{text-shadow:0 0 0 #fff;}
+}
+.inner{width:1000px;margin:0 auto;}
+header{width:100%;background-color:#e5e5e5;}
+header .logo{float:left;font-family:ziti;color:#49879e;font-size:37px;line-height:101px;padding-top:9px;}
+header i{margin-right:21px;}
+header .nav{float:right;padding-top:36px;}
+
+.one{background-image:linear-gradient(45deg,#9dc66a 5%,#4fa59a 30%,#4361c3);}
+.one .inner{text-align:center;padding:100px 0;}
+.one .icon i{font-size:80px;color:#fff;animation:sunny 5s infinite linear;}
+
+.one h1{font:36px/60px arial;color:#fff;padding-bottom:14px;}
+.one h1 span{font-weight:bolder;}
+.one h1 a{color:#fff;border-bottom:1px dotted #fff;position:relative;}
+.one h1 a:before{content:"";color:#fff;border-bottom:1px dotted #fff;position:absolute;width:100%;top:100%;left:0;opacity:0;transition:all 0.7s;}
+.one h1 a:hover:before{top:0;left:0;opacity:1;}
+.one p{padding-bottom:33px;font:18px/40px arial;color:#fff;}
+.one .btn a{display:inline-block;width:175px;height:50px;border:1px solid #fff;line-height:50px;font-size:21px;color:#fff;border-radius:4px;text-transform:uppercase;position:relative;transition:all 1s;}
+.one .btn a:after{content:"";background-color:#fff;width:1px;height:100px;position:absolute;top:51px;left:50%;}
+.one .btn a:hover{padding:0 30px;background-color:rgba(255,255,255,.5);}
+
+.two{background-color:#eaf9fe;padding:104px 0 127px 0;}
+.two .icon_list{float:left;width:500px;}
+.two .icon_list li{display:inline-block;border:1px solid #6e98ae;border-radius:4px;margin:40px;transform:rotate(45deg);overflow:hidden;transition:all 0.7s;}
+.two .icon_list li:hover{background-color:#31D7D4;}
+.two .icon_list li a{display:inline-block;width:140px;height:140px;text-align:center;line-height:140px;font-size:60px;transform:rotate(-45deg);transition:all 0.7s;}
+.two .icon_list li:nth-child(1) a{color:#c3e6a2;}
+.two .icon_list li:nth-child(1):hover a{transform:rotate(-45deg) scale(1.8);}
+.two .icon_list li:nth-child(2) a{color:#86d9ab;}
+.two .icon_list li:nth-child(2):hover a{transform:rotate(315deg);}
+.two .icon_list li:nth-child(3) a{color:#6cd4c9;}
+.two .icon_list li:nth-child(3):hover a{transform:rotate(-45deg) skewX(45deg);}
+.two .icon_list li:nth-child(4) a{color:#5fb3d8;}
+.two .icon_list li:nth-child(4):hover a{transform:rotate(180deg) scale(1.8)}
+.two .icon_list li:nth-child(5) a{color:#4e84ce;}
+.two .icon_list li:nth-child(5):hover a{transform:rotate(-45deg) scale(0.5);}
+.two .icon_list li:nth-child(6) a{color:#6c87f0;}
+.two .icon_list li:nth-child(6):hover a{transform:rotate(-45deg) translateY(-20px);}
+.two .icon_list li a:hover i{color:#fff;text-shadow:0 0 10px #fff;}
+
+.two .text{float:right;width:500px;}
+.two .text h2{font:30px/52px arial;font-weight:bolder;color:#45899c;position:relative;padding-bottom:57px;}
+.two .text h2:after{content:"";width:160px;height:1px;background-color:#4984a2;position:absolute;top:130px;left:0;}
+.two .text p{font:15px/32px arial;padding-top:31px;}
+
+footer{background-image:linear-gradient(45deg,#9dc66a 5%,#4fa59a 30%,#4361c3);padding:51px 0;text-align:center;}
+footer .icon ul li{display:inline-block;transition:all 0.7s;}
+footer .icon ul li:nth-child(1):hover{transform:scale(1.8);}
+footer .icon ul li:nth-child(2):hover{transform:scale(1.8) rotate(360deg);}
+footer .icon ul li:nth-child(3):hover{transform:scale(0.8) skewX(45deg);}
+footer .icon ul li:nth-child(4):hover{transform:scale(1.8) translateY(-20px);}
+footer .icon ul li:nth-child(5):hover{transform:scale(0.8) translateY(20px);}
+footer i{padding:0 14px 21px 14px;color:#fff;font-size:20px !important;}
+footer p{font:16px/23px "宋体";color:#00000d;}
+footer span{font:13px/16px arial;color:#1a0000;}
+footer span a{color:#551b93;border-bottom:1px solid #551b93;}

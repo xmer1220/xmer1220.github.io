@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+/*main区域*/
+.main{width:1140px;margin:0 auto;padding:53px 0 56px 0;text-align:center;}
+.main h1{font:23px/104px arial normal;}
+.main .list{width:600px;margin:0 auto;}
+.main .list ul{height:38px;text-align:center;}
+.main .list ul li{float:left;}
+.main .list ul a{display:block;width:120px;font-size:12px;color:#222021;}
+.main .list ul .all{display:block;width:60px;padding-left:60px;color:#ea2610;}
+.main .list ul a:hover{color:#ea2610;}
+.main .pic{width:1140px;height:546px;}
+.main .pic li{float:left;}
+.main .pic li a{display:block;width:285px;height:182px;}

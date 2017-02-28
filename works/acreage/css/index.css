@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+/*banner区域*/
+.banner{background:url(../images/banner.jpg) no-repeat center /contain;height:700px;text-align:center;}
+.banner h2{font:32px/48px Oswald;color:#fff;padding-top:286px;}
+.banner p{font:14px/34px 'Open Sans', sans-serif;color:#fff;}
+.banner .btn{width:151px;height:40px;margin:36px auto;}
+.banner .btn a{display:block;width:151px;height:40px;background-color:#6bc676;font:14px/40px 'Open Sans', sans-serif;color:#fff;transition:all 1s;}
+.banner .btn:hover a{color:#6bc676;background-color:#fff;}
+/*services*/
+.services{text-align:center;padding-top:72px;}
+.services .inner>h1{font:34px/71px Oswald;color:#212121;width:342px;border-bottom:1px solid #999;margin:0 auto;position:relative;}
+.services .inner>h1:before{content:"";width:114px;border-bottom:3px solid #6bc676;position:absolute;bottom:-2px;left:115px;z-index:-1;}
+.services .inner>p{font:14px/56px 'Open Sans', sans-serif;color:#999;padding-bottom:47px;}
+.services .content .left{float:left;border-right:1px solid #999;padding:0 95px 79px 60px;position:relative;}
+/*round*/
+.services .content .left .round{width:100px;height:100px;border-radius:50%;border:1px solid #999;background-color:#fff;text-align:center;line-height:100px;position:absolute;z-index:2;transition:all 1s;cursor:pointer;}
+.services .content .left .r1{top:0;right:-50px;}
+.services .content .left .r2{top:240px;right:-50px;}
+.services .content .left .r3{top:476px;right:-50px;}
+.services .content .left .round i{font-size:35px;color:#999;transition:all 1s;}
+.services .content .left .round:hover{background-color:#6bc676;}
+.services .content .left .round:hover i{color:#fff;transform:rotateY(180deg);}
+
+.services .content .left .text{width:416px;height:155px;text-align:right;}
+.services .content .text time{font:100 14px/19px Oswald, sans-serif;color:#999;}
+.services .content .text h3{font:100 20px/57px Oswald, sans-serif;color:#6bc676;}
+.services .content .text p{font:14px/25px 'Open Sans', sans-serif;color:#999;padding-top:4px;}
+.services .content .left .text1{padding-bottom:320px;}
+.services .content .right{float:left;padding-left:95px;}
+.services .content .right .text{width:416px;height:155px;text-align:left;padding-top:240px;}
+.services .bottom{width:796px;height:175px;margin:0 auto;border:1px solid #999;padding:35px 130px 29px 90px;box-sizing:border-box;}
+.services .bottom i{font-size:20px;color:#6bc676;font-style:italic;position:absolute;top:8px;left:-41px;}
+.services .bottom p{font:500 18px/37px 'Open Sans', sans-serif;color:#999;text-align:left;position:relative;}
+/*icon*/
+.icon{background:url(../images/1.jpg) no-repeat center / cover;margin-top:80px;padding-bottom:69px;}
+.icon ul li{float:left;margin:0 90px;text-align:center;}
+.icon ul li p{font:20px/88px 'Open Sans', sans-serif;color:#fff;padding-top:38px;}
+.icon ul li h2{font:30px/100px Oswald;color:#fff;}
+.icon ul li .box{width:96px;height:96px;border:1px solid #fff;background-color:#fff;text-align:center;margin:0 auto;line-height:98px;margin-top:6px;transition:all 1s;}
+.icon ul li .box:hover{border:1px solid #6bc676;}
+.icon ul li .box:hover a{background-color:#fff;}
+.icon ul li .box a{display:block;width:96px;height:96px;background-color:#6bc676;text-align:center;line-height:96px;transition:all 1s;}
+.icon ul li .box i{font-size:40px;color:#fff;transition:all 1s;}
+.icon ul li .box:hover i{color:#6bc676;transform:translateY(30px);}
+/*test*/
+.test{text-align:center;padding-top:72px;}
+.test .inner>h1{font:34px/71px Oswald;color:#212121;width:342px;border-bottom:1px solid #999;margin:0 auto;position:relative;}
+.test .inner>h1:before{content:"";width:114px;border-bottom:3px solid #6bc676;position:absolute;bottom:-2px;left:115px;z-index:-1;}
+.test p{font:14px/56px 'Open Sans', sans-serif;color:#999;padding-bottom:35px;}
+.test .intro{width:399px;border-bottom:1px solid #ddd;margin:0 auto;text-align:left;margin-bottom:95px;}
+.test .intro a{display:inline-block;margin:0 17px;font:20px/40px Oswald;color:#999;}
+.test .intro a.active{color:#6bc676;}
+.test .intro a:hover{color:#6bc676;}
+.test .user{width:114px;height:114px;border-radius:50%;border:1px solid #e8e8e8;margin:0 auto;padding:6px 0;box-sizing:border-box;}
+.test h4{font:20px/40px Oswald;color:#212121;padding-top:14px;}
+.test span{font:500 14px/18px 'Open Sans', sans-serif;color:#6bc676;padding-bottom:15px;display:block;}
+.test .p2{font:14px/25px 'Open Sans', sans-serif;color:#999;width:645px;margin:0 auto;padding-bottom:78px;}

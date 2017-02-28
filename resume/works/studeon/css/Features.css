@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+.main_inner{width:1140px;margin:0 auto;height:1064px;}
+.main_inner .innerTop h1{font:27px/21px arial;font-weight:bolder;padding-top:86px;text-align:center;}
+.main_inner .innerTop .iconText{height:416px;}
+.main_inner .innerTop .iconText ul{padding-top:70px;}
+.main_inner .innerTop .iconText li{float:left;background:url(../images/ser-bg.png) no-repeat;width:360px;height:130px;margin:0 20px 20px 0;}
+.main_inner .innerTop .iconText .icon{float:left;width:67px;height:123px;background-color:#ed5844;}
+.main_inner .innerTop .iconText .text{float:right;width:263px;}
+.main_inner .innerTop .iconText .icon .demon{margin:43px 16px 45px 15px;}
+.main_inner .innerTop .iconText .icon .demon a{display:block;width:37px;height:36px;background:url(../images/s-icons.png) no-repeat left top;}
+.main_inner .innerTop .iconText .icon .demon .mail{background-position:-88px 0px;}
+.main_inner .innerTop .iconText .icon .demon .book{background-position:-160px 0px;}
+.main_inner .innerTop .iconText .icon .demon .dir{background-position:0px -113px;}
+.main_inner .innerTop .iconText .icon .demon .down{background-position:-80px -113px;}
+.main_inner .innerTop .iconText .icon .demon .wea{background-position:-155px -113px;}
+.main_inner .innerTop .iconText ul .text h3{font:15px/36px arial normal;color:#504e4f;padding-top:12px;}
+.main_inner .innerTop .iconText ul .text p{font:13px/20px arial;color:#a0a0a0;}
+
+.main_inner .innerBot h1{font:27px/21px arial;font-weight:bolder;text-align:center;}
+.main_inner .innerBot .fea{text-align:center;padding-top:33px;}
+.main_inner .innerBot .fea ul li{float:left;width:380px;height:235px;}
+.main_inner .innerBot .fea ul li a{display:block;width:100px;height:108px;background:url(../images/img-sprite.png) no-repeat left top;margin:0 auto;}
+.main_inner .innerBot .fea ul li .eye{background-position:0;}
+.main_inner .innerBot .fea ul li .rel{background-position:-104px 0;}
+.main_inner .innerBot .fea ul li .lay{background-position:-208px 0;}
+.main_inner .innerBot .fea ul li .easy{background-position:-304px 0;}
+.main_inner .innerBot .fea ul li .help{background-position:-408px 0;}
+.main_inner .innerBot .fea ul li img{display:block;width:380px;}
+.main_inner .innerBot .fea ul li h3{font:17px/31px arial;}
+.main_inner .innerBot .fea ul li p{font:13px/20px arial;color:#a0a0a0;padding:0 21px 0 23px;}

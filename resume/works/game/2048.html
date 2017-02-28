@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>2048</title>
+  <meta name="generator" content="editplus" />
+  <meta charset="utf-8" />
+  <style>
+	*{margin:0;padding:0;}
+	#gridPanel{
+		width:480px;
+		height:480px;
+		margin:0 auto;
+		background-color:#a640d1;//a640d1
+		border-radius:10px;
+		position:relative;
+		padding-left:20px;
+		padding-top:20px;
+	}
+	.cell{
+		width:100px;
+		height:100px;
+		background-color:#ccc0b3;
+		border-radius:6px;
+		float:left;
+		margin-right:20px;
+		margin-bottom:20px;
+	}
+	.fcell{
+		width:100px;
+		height:100px;
+		border-radius:6px;
+		background-color:#fff;
+		line-height:100px;
+		text-align:center;
+		font-size:60px;
+		position:absolute;
+	}
+	#fc00,#fc01,#fc02,#fc03{top:20px;}
+	#fc10,#fc11,#fc12,#fc13{top:140px;}
+	#fc20,#fc21,#fc22,#fc23{top:260px;}
+	#fc30,#fc31,#fc32,#fc33{top:380px;}
+	#fc00,#fc10,#fc20,#fc30{left:20px;}
+	#fc01,#fc11,#fc21,#fc31{left:140px;}
+	#fc02,#fc12,#fc22,#fc32{left:260px;}
+	#fc03,#fc13,#fc23,#fc33{left:380px;}
+	.n2{background:#eee4da}
+	.n4{background:#ede0c8}
+	.n8{background:#f2b179}
+	.n16{background:#f59563}
+	.n32{background:#f67c5f}
+	.n64{background:#f65e3b}
+	.n128{background:#edcf72}
+	.n256{background:#edcc61}
+	.n512{background:#9c0}
+	.n1024{background:#33b5e5}
+	.n2048{background:#09c}
+	.n4096{background:#a6c}
+	.n8192{background:#93c}
+	.n1024,.n2048,.n4096,.n8192{font-size:40px;}
+	.n8,.n16,.n32,.n64,.n128,.n256,.n512,.n1024
+		,.n2048,.n4096,.n8192{color:#fff;}
+	p{
+		width:480px;margin:0 auto;font-size:40px;color:#d064ce;//d064ce
+	}
+	#gameOver{
+		position:absolute;
+		width:100%;height:100%;
+		top:0;left:0;
+		display:none;
+	}
+	#gameOver div{
+		width:100%;height:100%;
+		background-color:#555;
+		opacity:0.5;
+		-moz-opacity:0.5;
+		filter:alpha(Opacity=50);
+	}
+	#gameOver p{
+		position:absolute;
+		width:300px;
+		height:200px;
+		background-color:#fff;
+		text-align:center;
+		font-size:30px;
+		border-radius:10px;
+		color:#a640d1;
+		padding-top:20px;
+	}
+	.btn{
+		background-color:#d064ce;
+		border-radius:6px;
+		color:#fff;
+		padding:10px;
+		line-height:150px;
+		cursor:pointer;
+	}
+	#tit{
+		padding-top:20px;
+		width:480px;
+		height:80px;
+		margin:20px auto 0;
+		text-align:center;
+		font-size:70px;
+		color:#724820;
+	}
+  </style>
+ </head>
+ <body>
+	<h1 id="tit">2048</h1>
+	<p>Score:<span id="score">0</span></p>
+	<div id=gridPanel>
+		<div id="c00" class="cell"></div>
+		<div id="c01" class="cell"></div>
+		<div id="c02" class="cell"></div>
+		<div id="c03" class="cell"></div>
+
+		<div id="c10" class="cell"></div>
+		<div id="c11" class="cell"></div>
+		<div id="c12" class="cell"></div>
+		<div id="c13" class="cell"></div>
+
+		<div id="c20" class="cell"></div>
+		<div id="c21" class="cell"></div>
+		<div id="c22" class="cell"></div>
+		<div id="c23" class="cell"></div>
+
+		<div id="c30" class="cell"></div>
+		<div id="c31" class="cell"></div>
+		<div id="c32" class="cell"></div>
+		<div id="c33" class="cell"></div>
+
+		<div id="fc00" class="fcell"></div>
+		<div id="fc01" class="fcell"></div>
+		<div id="fc02" class="fcell"></div>
+		<div id="fc03" class="fcell"></div>
+
+		<div id="fc10" class="fcell"></div>
+		<div id="fc11" class="fcell"></div>
+		<div id="fc12" class="fcell"></div>
+		<div id="fc13" class="fcell"></div>
+
+		<div id="fc20" class="fcell"></div>
+		<div id="fc21" class="fcell"></div>
+		<div id="fc22" class="fcell"></div>
+		<div id="fc23" class="fcell"></div>
+
+		<div id="fc30" class="fcell"></div>
+		<div id="fc31" class="fcell"></div>
+		<div id="fc32" class="fcell"></div>
+		<div id="fc33" class="fcell"></div>
+	</div>
+	<div id="gameOver">
+		<div></div>
+		<p>
+			Game Over!</br>
+			Score:<span id="finalScore">0</span></br>
+			<a id="restart" class="btn"
+			   onclick="game.restart()">Try Again!</a>
+		</p>
+	</div>
+	<script src="animate.min.js"></script>
+	<script src="main.min.js"></script>
+	<script>
+		game.start();
+			document.onkeydown=function(){
+				var evt=
+				window.event||arguments[0];
+				if(game.state==game.PLAYING){
+					if(evt.keyCode==37){
+						game.moveLeft();
+					}else if(evt.keyCode==39){
+						game.moveRight();
+					}else if(evt.keyCode==38){
+						game.moveUp();
+					}else if(evt.keyCode==40){
+						game.moveDown();
+					}
+					if(game.gameOver()){
+						game.state=game.GAME_OVER;
+						var gameOverDiv=document.querySelector("#gameOver");
+						gameOverDiv.style.display="block";
+						var finalScore=document.querySelector("#finalScore");
+						finalScore.innerHTML=game.score;
+						var p=document.querySelector("#gameOver p");
+						var pCSS=null;
+						if(p.currentStyle){
+							pCSS=p.currentStyle;
+						}else{
+							pCSS=getComputedStyle(p,null);
+						}
+						var width=parseInt(pCSS.width);
+						var height=parseInt(pCSS.height);
+						var screenWidth=window.innerWidth;
+						var screenHeight=window.innerHeight;
+						p.style.left=(screenWidth-width)/2+"px";
+						p.style.top=(screenHeight-height)/2+"px";
+					}
+				}
+			}
+	</script>
+ </body>
+</html>

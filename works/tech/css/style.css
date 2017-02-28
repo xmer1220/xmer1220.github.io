@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+ul{list-style:none;}
+a{text-decoration:none;}
+img,input,textarea{border:none;}
+input{border:none;}
+.clear{clear:both;}
+body{font-family:arial;background:url(../images/body-bg.jpg);background-size:cover;}
+
+#wrap{width:980px;margin:0 auto;}
+header{height:85px;padding-top:34px;}
+
+nav{height:40px;background-color:#888;box-shadow:0 10px 10px rgba(0,0,0,.5);border-radius:7px;}
+nav ul{padding-left:27px;}
+nav ul li{float:left;padding-right:31px;line-height:40px;}
+nav ul li a{color:#d8feff;font-size:14px;text-shadow:0 5px 5px rgba(101,0,0,.5)}
+nav form{float:right;padding:7px 10px 6px 0;}
+nav form input{width:140px;height:27px;padding-left:11px;color:#aba6ac;border-radius:4px;}
+
+section{margin-top:30px;}
+section article{float:left;width:600px;background-color:#fff;padding:29px 35px 40px 35px;border-radius:7px;}
+section article h2{font:18px/33px arial;color:#010008;}
+section article time{display:block;font:14px/29px arial;color:#000400;padding-bottom:6px;}
+section article .pic{font-size:0;}
+section article p{font:14px/21px arial;color:#686963;padding:26px 0 9px 0;}
+section article video{width:100%;}
+section aside{float:right;width:240px;padding:0 20px 10px 20px;}
+section .sidebar{background-color:#fff;border-radius:7px;padding:0 20px;margin-bottom:27px;box-shadow:0 10px 10px rgba(0,0,0,.5);}
+section h3{font:17px/36px arial;}
+section ul{padding-bottom:10px;}
+section ul li{border-top:1px solid #eee;}
+section ul a{height:30px;font:14px/30px arial;color:#030004;}
+
+footer p{text-align:center;font:14px/21px arial;color:#66665e;padding-top:15px;}
