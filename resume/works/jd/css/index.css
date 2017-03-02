@@ -58,9 +58,9 @@
 .menu .nav-list .content .nav-con .left .nav-con-tittle .titul .active{background-color:#c81623;}
 .menu .nav-list .content .nav-con .left .nav-con-tittle .titul .active i{background-color:#b1191a;}
 
-.menu .nav-list .content .nav-con .left .nav-con-text{width:725px;padding-top:6px;}
+.menu .nav-list .content .nav-con .left .nav-con-text{padding-top:6px;}
 .menu .nav-list .content .nav-con .left .nav-con-text dl{padding-left:20px;}
-.menu .nav-list .content .nav-con .left .nav-con-text dt{float:left;width:84px;height:21px;text-align:right;position:relative;padding-top:10px;}
+.menu .nav-list .content .nav-con .left .nav-con-text dt{float:left;width:90px;height:21px;text-align:right;position:relative;padding-top:10px;}
 .menu .nav-list .content .nav-con .left .nav-con-text dt a{display:block;color:#666;font:12px/21px "微软雅黑";font-weight:bolder;padding-right:29px;}
 .menu .nav-list .content .nav-con .left .nav-con-text dt a:hover{color:#c81623;}
 .menu .nav-list .content .nav-con .left .nav-con-text dt a i{font-family:consolas;position:absolute;top:10px;right:17px;}
